@@ -179,17 +179,17 @@ public class TrianglePanel extends javax.swing.JPanel {
                             .addComponent(areaText)
                             .addComponent(perimeterText))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(232, 232, 232)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(243, 243, 243))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(56, 56, 56)
+                .addGap(46, 46, 46)
                 .addComponent(jLabel1)
-                .addGap(18, 18, 18)
+                .addGap(28, 28, 28)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(sideAInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -271,14 +271,17 @@ public class TrianglePanel extends javax.swing.JPanel {
 
     private void sideAInputKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_sideAInputKeyTyped
         Utilities.preventLetters(evt, errorLabel);
+        Utilities.clearResults(areaText, perimeterText);
     }//GEN-LAST:event_sideAInputKeyTyped
 
     private void sideBInputKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_sideBInputKeyTyped
         Utilities.preventLetters(evt, errorLabel);
+        Utilities.clearResults(areaText, perimeterText);
     }//GEN-LAST:event_sideBInputKeyTyped
 
     private void sideCInputKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_sideCInputKeyTyped
         Utilities.preventLetters(evt, errorLabel);
+        Utilities.clearResults(areaText, perimeterText);
     }//GEN-LAST:event_sideCInputKeyTyped
 
     private void calcButtonKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_calcButtonKeyPressed

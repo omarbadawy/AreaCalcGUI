@@ -12,9 +12,14 @@ public class Utilities {
             && (c != KeyEvent.VK_ENTER)){
             
             e.consume();  // ignore event
-            errorLabel.setText("You Can't Enter Letters!");
+            errorLabel.setText("Only Positive Numbers Allowed!");
         }else {
             errorLabel.setText("");
         }
+    }
+    
+    public static void clearResults(JLabel areaLabel, JLabel perimeterLabel) {
+        areaLabel.setText("0.0");
+        perimeterLabel.setText("0.0");
     }
 }

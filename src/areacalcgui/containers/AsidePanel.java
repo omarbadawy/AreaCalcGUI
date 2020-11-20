@@ -12,7 +12,7 @@ public class AsidePanel extends JPanel {
     public AsidePanel(JButton rectButton, JButton triButton, JButton circButton) {
         Dimension size = rectButton.getPreferredSize();
         Insets insets = getInsets();
-        int insetsLeft = 25 + insets.left;
+        int insetsLeft = 35 + insets.left;
         int insetsTop = 150 + insets.top;
         
         

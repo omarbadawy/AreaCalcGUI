@@ -144,14 +144,14 @@ public class CirclePanel extends javax.swing.JPanel {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(199, 199, 199))
+                .addGap(257, 257, 257))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(53, 53, 53)
+                .addGap(55, 55, 55)
                 .addComponent(jLabel1)
-                .addGap(31, 31, 31)
+                .addGap(29, 29, 29)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(radiusInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -216,6 +216,7 @@ public class CirclePanel extends javax.swing.JPanel {
 
     private void radiusInputKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_radiusInputKeyTyped
         Utilities.preventLetters(evt, errorLabel);
+        Utilities.clearResults(areaText, perimeterText);
     }//GEN-LAST:event_radiusInputKeyTyped
 
     private void calcButtonKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_calcButtonKeyPressed
